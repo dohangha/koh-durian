@@ -33,7 +33,7 @@
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">KOH AUTHENTIC<small><i>Durian Taste</i></small></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Products
+	        <span class="oi oi-menu"></span> 
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
@@ -43,28 +43,25 @@
 	          <li class="nav-item"><a href="#product" class="nav-link nav-4">Products</a></li>
 	          <li class="nav-item"><a href="#contact" class="nav-link nav-5">Contact</a></li>
 	        </ul>
-			<div class="language px-3" id="languageSwitcher">
-				<a href="#" onclick = "changeLanguage('en')" language="english" class="language-item active">EN |</a>
-				<a href="#"  onclick = "changeLanguage('cn')" language="chinese" class="language-item">CN</a>
-			</div>
 	      </div>
+		  <div class="language px-3" id="languageSwitcher">
+			<a href="#" onclick = "changeLanguage('en')" language="english" class="language-item active">EN |</a>
+			<a href="#"  onclick = "changeLanguage('cn')" language="chinese" class="language-item">CN</a>
+		</div>
 			
 	  </nav>
     <!-- END nav -->
-
     <section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image: url(./images/durian-fresh3.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading subheading1">Welcome</span>
               <h1 class="mb-4 title1">Koh Authentic Durian Taste</h1>
               <p class="mb-4 mb-md-5 sub1">100% fresh & organic durian in Pahang.</p>
               <p><a href="https://wa.me/60129778288" target="_blank" class="btn btn-primary p-3 px-xl-4 py-xl-3 order">Order Now</a> <a href="#product" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3 view">View Products</a></p>
             </div>
-
           </div>
         </div>
       </div>
@@ -73,14 +70,12 @@
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading subheading1">Welcome</span>
-              <h1 class="mb-4 title2">Authentic Taste & Desired Place</h1>
-              <p class="mb-4 mb-md-5 sub2">Enjoy the hand-picked, fresh selection of the best durians in Pahang.</p>
+              <h1 class="mb-4 title2" id="title2">Authentic Taste & Desired Place</h1>
+              <p class="mb-4 mb-md-5 sub2" id="sub2">Enjoy the hand-picked, fresh selection of the best durians in Pahang.</p>
               <p><a href="https://wa.me/60129778288" target="_blank" class="btn btn-primary p-3 px-xl-4 py-xl-3 order">Order Now</a> <a href="#product" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3 view">View Products</a></p>
             </div>
-
           </div>
         </div>
       </div>
@@ -89,14 +84,12 @@
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
             	<span class="subheading subheading1">Welcome</span>
               <h1 class="mb-4 title3">A Premier Durian Destination</h1>
               <p class="mb-4 mb-md-5 sub3"> We stay true to our brand by sourcing and cultivating durians from our farm.</p>
               <p><a href="https://wa.me/60129778288" target="_blank" class="btn btn-primary p-3 px-xl-4 py-xl-3 order">Order Now</a> <a href="#product" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3 view">View Products</a></p>
             </div>
-
           </div>
         </div>
       </div>
@@ -698,6 +691,7 @@
 	              </ul>
 	            </div>
             </div>
+			<div id="google_translate_element"></div>
           </div>
         </div>
         <div class="row">
@@ -735,5 +729,14 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+	function googleTranslateElementInit(){
+		new google.translate.TranslateElement(
+			{pageLanguage: 'en',
+		},
+			'google_translate_element'
+		)
+	}
+  </script>
   </body>
 </html>
