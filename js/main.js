@@ -308,7 +308,7 @@ buttons.forEach(button => {
 })
 
 
-function changeLanguage(lang) {
+/*function changeLanguage(lang) {
 	let element = document.querySelector('.nav-1');
     if (lang == "en") {
        element.innerHTML = "Home";
@@ -811,4 +811,5 @@ function changeLanguage(lang) {
        element82.innerHTML = "由 Koh 制作 正宗榴莲口味";
     }
  }
+*/
 
